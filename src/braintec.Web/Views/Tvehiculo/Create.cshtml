@@ -10,16 +10,43 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Placavehiculo" />
             <div class="form-group">
-                <label asp-for="Placavehiculo" class="control-label"></label>
-                <input asp-for="Placavehiculo" class="form-control" />
-                <span asp-validation-for="Placavehiculo" class="text-danger"></span>
+                <label asp-for="Marcavehiculo" class="control-label"></label>
+                <input asp-for="Marcavehiculo" class="form-control" />
+                <span asp-validation-for="Marcavehiculo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Modelovehiculo" class="control-label"></label>
+                <input asp-for="Modelovehiculo" class="form-control" />
+                <span asp-validation-for="Modelovehiculo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cilindrajevehiculo" class="control-label"></label>
+                <input asp-for="Cilindrajevehiculo" class="form-control" />
+                <span asp-validation-for="Cilindrajevehiculo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kilometrajevehiculo" class="control-label"></label>
+                <input asp-for="Kilometrajevehiculo" class="form-control" />
+                <span asp-validation-for="Kilometrajevehiculo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Trasmisionvehiculo" class="control-label"></label>
+                <input asp-for="Trasmisionvehiculo" class="form-control" />
+                <span asp-validation-for="Trasmisionvehiculo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Aniovehiculo" class="control-label"></label>
+                <input asp-for="Aniovehiculo" class="form-control" />
+                <span asp-validation-for="Aniovehiculo" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Numdocumento" class="control-label"></label>
-                <select asp-for="Numdocumento" class ="form-control" asp-items="ViewBag.Numdocumento"></select>
+                <select asp-for="Numdocumento" class="form-control" asp-items="ViewBag.Numdocumento"></select>
+                <span asp-validation-for="Numdocumento" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
