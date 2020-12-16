@@ -1,0 +1,15 @@
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\bin\Debug\netcoreapp3.1\braintec.Infrastructure.deps.json
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\bin\Debug\netcoreapp3.1\braintec.Infrastructure.runtimeconfig.json
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\bin\Debug\netcoreapp3.1\braintec.Infrastructure.runtimeconfig.dev.json
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\bin\Debug\netcoreapp3.1\braintec.Infrastructure.dll
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\bin\Debug\netcoreapp3.1\braintec.Infrastructure.pdb
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\bin\Debug\netcoreapp3.1\braintec.Core.dll
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\bin\Debug\netcoreapp3.1\braintec.Core.pdb
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\obj\Debug\netcoreapp3.1\braintec.Infrastructure.csprojAssemblyReference.cache
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\obj\Debug\netcoreapp3.1\braintec.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\obj\Debug\netcoreapp3.1\braintec.Infrastructure.AssemblyInfo.cs
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\obj\Debug\netcoreapp3.1\braintec.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\obj\Debug\netcoreapp3.1\braintec.Infrastructure.csproj.CopyComplete
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\obj\Debug\netcoreapp3.1\braintec.Infrastructure.dll
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\obj\Debug\netcoreapp3.1\braintec.Infrastructure.pdb
+C:\Users\ADMIN\braintec\src\braintec.Infrastructure\obj\Debug\netcoreapp3.1\braintec.Infrastructure.genruntimeconfig.cache

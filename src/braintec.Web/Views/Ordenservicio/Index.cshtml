@@ -1,0 +1,65 @@
+﻿@model IEnumerable<braintec.Infrastructure.Data.Ordenservicio>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Resumenservicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdestordenservNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdprioridadNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdservicioNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumdocumentoNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PlacavehiculoNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Resumenservicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdestordenservNavigation.Idestordenserv)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdprioridadNavigation.Idprioridad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdservicioNavigation.Idservicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumdocumentoNavigation.Numdocumento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlacavehiculoNavigation.Placavehiculo)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Idcasoservicio">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Idcasoservicio">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Idcasoservicio">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

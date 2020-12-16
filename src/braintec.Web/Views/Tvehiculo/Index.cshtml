@@ -1,0 +1,71 @@
+﻿@model IEnumerable<braintec.Infrastructure.Data.Tvehiculo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Datos Vehículo</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-secondary">Nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Marcavehiculo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modelovehiculo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cilindrajevehiculo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kilometrajevehiculo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Trasmisionvehiculo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aniovehiculo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumdocumentoNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marcavehiculo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modelovehiculo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cilindrajevehiculo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kilometrajevehiculo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Trasmisionvehiculo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aniovehiculo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumdocumentoNavigation.Numdocumento)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Placavehiculo" class="btn btn-primary">Editar</a>
+                <a asp-action="Details" asp-route-id="@item.Placavehiculo" class="btn btn-success">Detalle</a>
+                <a asp-action="Delete" asp-route-id="@item.Placavehiculo" class="btn btn-danger">Borrar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,12 @@
+C:\Users\ADMIN\braintec\src\braintec.Core\bin\Debug\netcoreapp3.1\braintec.Core.deps.json
+C:\Users\ADMIN\braintec\src\braintec.Core\bin\Debug\netcoreapp3.1\braintec.Core.runtimeconfig.json
+C:\Users\ADMIN\braintec\src\braintec.Core\bin\Debug\netcoreapp3.1\braintec.Core.runtimeconfig.dev.json
+C:\Users\ADMIN\braintec\src\braintec.Core\bin\Debug\netcoreapp3.1\braintec.Core.dll
+C:\Users\ADMIN\braintec\src\braintec.Core\bin\Debug\netcoreapp3.1\braintec.Core.pdb
+C:\Users\ADMIN\braintec\src\braintec.Core\obj\Debug\netcoreapp3.1\braintec.Core.csprojAssemblyReference.cache
+C:\Users\ADMIN\braintec\src\braintec.Core\obj\Debug\netcoreapp3.1\braintec.Core.AssemblyInfoInputs.cache
+C:\Users\ADMIN\braintec\src\braintec.Core\obj\Debug\netcoreapp3.1\braintec.Core.AssemblyInfo.cs
+C:\Users\ADMIN\braintec\src\braintec.Core\obj\Debug\netcoreapp3.1\braintec.Core.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\braintec\src\braintec.Core\obj\Debug\netcoreapp3.1\braintec.Core.dll
+C:\Users\ADMIN\braintec\src\braintec.Core\obj\Debug\netcoreapp3.1\braintec.Core.pdb
+C:\Users\ADMIN\braintec\src\braintec.Core\obj\Debug\netcoreapp3.1\braintec.Core.genruntimeconfig.cache

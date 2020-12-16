@@ -1,0 +1,197 @@
+@import url('data:application/octet-stream;base64,QGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdNYXJ2ZWwnOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNDAwOwogIGZvbnQtZGlzcGxheTogc3dhcDsKICBzcmM6IGxvY2FsKCdNYXJ2ZWwnKSwgbG9jYWwoJ01hcnZlbC1SZWd1bGFyJyksIHVybChodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3MvbWFydmVsL3Y5L253cFZ0S2VvTmdCVjBxYTRsbFRBLnR0ZikgZm9ybWF0KCd0cnVldHlwZScpOwp9Cg==');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* Clases Especiales*/
+.borde {
+	border: 1px solid gray;
+}
+/* Contenedor*/
+.contenedor {
+	width: 100%;
+	height: 630px;
+	margin: auto;
+	font-family: 'Marvel', sans-serif;
+}
+/*Navegador*/
+.logo {
+	width: 18%;
+	height: 100%;
+	float: left;
+}
+
+	.logo img {
+		width: 30%;
+		height: 100%;
+	}
+
+.navegacion {
+	width: 62%;
+	height: 100%;
+	float: left;
+	color: white;
+	font-size: 2em;
+	padding-top: 0.5%;
+}
+
+.miperfil {
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+
+nav {
+	width: 100%;
+	height: 8%;
+	background: #707070;
+	text-align: center;
+	float: left;
+}
+	/*Nivel1*/
+	nav ul {
+		list-style: none;
+		text-align: center;
+	}
+
+		nav ul li {
+			width: 100%;
+			height: 100%;
+		}
+
+			nav ul li:hover ul {
+				display: block;
+			}
+
+	nav .miperfil > ul > li {
+		display: inline-block;
+	}
+
+	nav .miperfil ul li {
+		height: 100%;
+		width: 100%;
+	}
+
+	nav ul li a {
+		display: block;
+		text-decoration: none;
+		color: white;
+		padding: 5.5%;
+		text-align: center;
+		border-bottom: 1px solid white;
+	}
+
+	nav .miperfil ul li a:hover {
+		background: rgba(0,0,0,0.3);
+		border-bottom: 1px solid white;
+	}
+	/*Nivel2*/
+	nav .miperfil li ul {
+		position: absolute;
+		background: #707070;
+		width: 20%;
+		display: none;
+	}
+
+		nav .miperfil li ul li {
+			width: 100%;
+		}
+/*Funciones*/
+.funciones {
+	width: 18%;
+	height: 90%;
+	float: left;
+	background: rgb(0,153,204);
+}
+
+.usuario {
+	width: 100%;
+	height: 20%;
+}
+
+.icono {
+	width: 30%;
+	height: 100%;
+	float: left;
+	padding: 10% 0% 0% 5%;
+}
+
+	.icono img {
+		width: 100%;
+		height: 70%;
+		border-radius: 50%;
+	}
+
+.nombrecargo {
+	width: 70%;
+	height: 100%;
+	float: left;
+	padding-top: 15%;
+	text-align: center;
+}
+
+	.nombrecargo h1 {
+		font-size: 1.1em;
+		color: white;
+	}
+
+.funusuario {
+	width: 100%;
+	height: 60%;
+	float: left;
+}
+
+	.funusuario a {
+		display: inline-block;
+		width: 100%;
+		height: 12%;
+		text-decoration: none;
+		padding: 5%;
+		text-align: center;
+		font-size: 1.1em;
+		color: white;
+		border-radius: 2px;
+		margin-bottom: 2px;
+	}
+
+		.funusuario a:hover {
+			background: rgba(0,0,0,0.5);
+		}
+
+.opcusuario {
+	width: 100%;
+	height: 20%;
+	float: left;
+}
+
+	.opcusuario a {
+		display: inline-block;
+		width: 100%;
+		height: 30%;
+		text-decoration: none;
+		padding: 3%;
+		text-align: center;
+		font-size: 1.1em;
+		color: white;
+		border-radius: 2px;
+		margin-bottom: 2px;
+	}
+
+		.opcusuario a:hover {
+			background: rgba(0,0,0,0.5);
+		}
+
+main {
+	width: 82%;
+	height: 90%;
+	float: left;
+	background: white
+}
+
+	main iframe {
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}

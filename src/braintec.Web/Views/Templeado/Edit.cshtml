@@ -1,0 +1,69 @@
+﻿@model braintec.Infrastructure.Data.Templeado
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Templeado</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Idempleado" />
+            <div class="form-group">
+                <label asp-for="Cargoempleado" class="control-label"></label>
+                <input asp-for="Cargoempleado" class="form-control" />
+                <span asp-validation-for="Cargoempleado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Usuarioempleado" class="control-label"></label>
+                <input asp-for="Usuarioempleado" class="form-control" />
+                <span asp-validation-for="Usuarioempleado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contrasenaempleado" class="control-label"></label>
+                <input asp-for="Contrasenaempleado" class="form-control" />
+                <span asp-validation-for="Contrasenaempleado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fcreacion" class="control-label"></label>
+                <input asp-for="Fcreacion" class="form-control" />
+                <span asp-validation-for="Fcreacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fultimoacceso" class="control-label"></label>
+                <input asp-for="Fultimoacceso" class="form-control" />
+                <span asp-validation-for="Fultimoacceso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Numdocumento" class="control-label"></label>
+                <select asp-for="Numdocumento" class="form-control" asp-items="ViewBag.Numdocumento"></select>
+                <span asp-validation-for="Numdocumento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Idroles" class="control-label"></label>
+                <select asp-for="Idroles" class="form-control" asp-items="ViewBag.Idroles"></select>
+                <span asp-validation-for="Idroles" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Idestadou" class="control-label"></label>
+                <select asp-for="Idestadou" class="form-control" asp-items="ViewBag.Idestadou"></select>
+                <span asp-validation-for="Idestadou" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

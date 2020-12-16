@@ -1,0 +1,82 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-braintec.Web-91D99C87-5A43-4B57-8AED-FF5464F8686E</UserSecretsId>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Ordenpedidoes\**" />
+    <Compile Remove="Views\Ordenpedido\**" />
+    <Compile Remove="Views\Ordenservicio\**" />
+    <Compile Remove="Views\Tcategoria\**" />
+    <Compile Remove="Views\Tinventario\**" />
+    <Compile Remove="Views\Tproveedor\**" />
+    <Compile Remove="Views\Troles\**" />
+    <Content Remove="Views\Ordenpedidoes\**" />
+    <Content Remove="Views\Ordenpedido\**" />
+    <Content Remove="Views\Ordenservicio\**" />
+    <Content Remove="Views\Tcategoria\**" />
+    <Content Remove="Views\Tinventario\**" />
+    <Content Remove="Views\Tproveedor\**" />
+    <Content Remove="Views\Troles\**" />
+    <EmbeddedResource Remove="Views\Ordenpedidoes\**" />
+    <EmbeddedResource Remove="Views\Ordenpedido\**" />
+    <EmbeddedResource Remove="Views\Ordenservicio\**" />
+    <EmbeddedResource Remove="Views\Tcategoria\**" />
+    <EmbeddedResource Remove="Views\Tinventario\**" />
+    <EmbeddedResource Remove="Views\Tproveedor\**" />
+    <EmbeddedResource Remove="Views\Troles\**" />
+    <None Remove="Views\Ordenpedidoes\**" />
+    <None Remove="Views\Ordenpedido\**" />
+    <None Remove="Views\Ordenservicio\**" />
+    <None Remove="Views\Tcategoria\**" />
+    <None Remove="Views\Tinventario\**" />
+    <None Remove="Views\Tproveedor\**" />
+    <None Remove="Views\Troles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\OrdenpedidoController.cs" />
+    <Compile Remove="Controllers\OrdenservicioController.cs" />
+    <Compile Remove="Controllers\TcategoriaController.cs" />
+    <Compile Remove="Controllers\TinventarioController.cs" />
+    <Compile Remove="Controllers\TproveedorController.cs" />
+    <Compile Remove="Controllers\TrolesController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.10" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\braintec.Core\braintec.Core.csproj" />
+    <ProjectReference Include="..\braintec.Infrastructure\braintec.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+</Project>

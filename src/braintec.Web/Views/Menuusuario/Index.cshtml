@@ -1,0 +1,59 @@
+﻿@model IEnumerable<braintec.Infrastructure.Data.Menuusuario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Mnombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Url)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipomenu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodigosubmenuNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdrolesNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mnombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Url)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipomenu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigosubmenuNavigation.Mcodigo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdrolesNavigation.Idroles)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Mcodigo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Mcodigo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Mcodigo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

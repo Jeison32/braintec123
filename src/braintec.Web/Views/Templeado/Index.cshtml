@@ -1,0 +1,77 @@
+﻿@model IEnumerable<braintec.Infrastructure.Data.Templeado>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Empleados</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-secondary">Nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cargoempleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuarioempleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contrasenaempleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fcreacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fultimoacceso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdestadouNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdrolesNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumdocumentoNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cargoempleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuarioempleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contrasenaempleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fcreacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fultimoacceso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdestadouNavigation.Idestadou)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdrolesNavigation.Idroles)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumdocumentoNavigation.Numdocumento)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Idempleado" class="btn btn-primary">Editar</a>
+                <a asp-action="Details" asp-route-id="@item.Idempleado" class="btn btn-success">Detalle</a>
+                <a asp-action="Delete" asp-route-id="@item.Idempleado" class="btn btn-danger">Borrar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

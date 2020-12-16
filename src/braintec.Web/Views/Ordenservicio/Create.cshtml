@@ -1,0 +1,48 @@
+﻿@model braintec.Infrastructure.Data.Ordenservicio
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Ordenservicio</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Numdocumento" class="control-label"></label>
+                <select asp-for="Numdocumento" class ="form-control" asp-items="ViewBag.Numdocumento"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Placavehiculo" class="control-label"></label>
+                <select asp-for="Placavehiculo" class ="form-control" asp-items="ViewBag.Placavehiculo"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Idservicio" class="control-label"></label>
+                <select asp-for="Idservicio" class ="form-control" asp-items="ViewBag.Idservicio"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Idestordenserv" class="control-label"></label>
+                <select asp-for="Idestordenserv" class ="form-control" asp-items="ViewBag.Idestordenserv"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Idprioridad" class="control-label"></label>
+                <select asp-for="Idprioridad" class ="form-control" asp-items="ViewBag.Idprioridad"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
